@@ -11,7 +11,7 @@ COPY package.json /app/
 COPY package-lock.json /app/
 RUN npm i 
 
-FROM node:16.17-bullseye-slim
+FROM node:gallium-bullseye-slim
 
 RUN npm install -g npm
 
